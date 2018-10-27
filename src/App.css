@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  position: absolute;
+  left: 35%;
+  margin-top: 10px;
+  border-radius: 4px;
+  min-height: 700px;
+  height: max-content;
+  width: 30%;
+  background: white;
+}
+.day {
+  text-align: left;
+  margin-bottom: 0px;
+  margin-left: 25px;
+  display: block;
+  color: #61dafb;
+  font-weight: 400;
+}
+.month {
+  margin-top: 0px;
+  text-align: left;
+  margin-left: 25px;
+  color: grey;
+  font-weight: 100;
+}
+.to-do {
+  font-size: 40px;
+  color: grey;
+  font-weight: 100;
+  padding-top: 5px;
+  padding-left: 20px;
+  float: left;
+  height: max-content;
+}
+.todoContainer {
+  justify-content: left;
+  padding: 10px;
+  width: 100%;
+  height: max-content;
+  border: none;
+  margin-left: 10px;
+  margin-top: 60px;
+  border-radius: 30px;
+}
+.todoList {
+  border-top: #e8e8ee solid 1px;
+  margin-top: 20px;
+}
+.deleteButton {
+  background-color: white;
+  margin-top: 0px;
+  padding: 0px;
+  width: max-content;
+  float: left;
+  height: max-content;
+  border: none;
+  color: red;
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+input {
+  border: none;
+  height: 30px;
+  width: 350px;
+  font-size: 23px;
+}
+.plusSign {
+  text-align: center;
+
+  background-color: #4caf50;
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  -webkit-box-shadow: 10px 10px 29px -15px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 10px 10px 29px -15px rgba(0, 0, 0, 0.47);
+  box-shadow: 10px 10px 29px -15px rgba(0, 0, 0, 0.47);
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
