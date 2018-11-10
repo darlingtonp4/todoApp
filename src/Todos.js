@@ -4,6 +4,7 @@ export default class Todos extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      todo: "",
       todos: [], // Array of toDos to display
       months: [
         // Array of months to display on header
@@ -55,13 +56,14 @@ export default class Todos extends Component {
     let oldTodo = this.state.todos;
     //Creates new toDo element to add
     let newTodo = {
-      todoContent: this.state.todo,
-      style: { textDecoration: "none" }
+      todoContent: this.state.todo
     };
     //Adds new toDo to array
-    this.setState({ todos: oldTodo.concat(newTodo) });
-    //Resets input field
-    this.setState({ todo: " " });
+    if (this.state.todo !== "") {
+      this.setState({ todos: oldTodo.concat(newTodo) });
+      //Resets input field
+      this.setState({ todo: "" });
+    }
   }
 
   render() {
